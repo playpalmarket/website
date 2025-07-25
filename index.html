@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topup Kilat - Website Top Up Game</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Menggunakan font Inter sebagai font utama */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0A0A0A;
+            color: #E5E7EB;
+        }
+
+        /* Efek gradasi untuk border kartu */
+        .card-border-gradient {
+            border: 1px solid transparent;
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            background-image: linear-gradient(#0A0A0A, #0A0A0A), linear-gradient(to right, #1F2937, #374151);
+        }
+        
+        /* Efek hover untuk kartu */
+        .card-border-gradient:hover {
+            background-image: linear-gradient(#0A0A0A, #0A0A0A), linear-gradient(to right, #3b82f6, #8b5cf6);
+            transform: translateY(-4px);
+        }
+
+        /* Style untuk placeholder input */
+        ::placeholder {
+            color: #6B7280;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+
+        <header class="flex justify-between items-center py-6">
+            <h1 class="text-2xl font-bold text-white">
+                <a href="#">Topup<span class="text-blue-500">KILAT</span></a>
+            </h1>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Promo</a>
+                <a href="#" class="text-gray-300 hover:text-white transition-colors">Lacak Pesanan</a>
+                <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                    Login
+                </a>
+            </nav>
+            <button class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </header>
+
+        <main class="text-center py-20 lg:py-32">
+            <h2 class="text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                Top Up Game & Aplikasi Premium
+            </h2>
+            <p class="mt-4 text-lg lg:text-xl text-gray-400 max-w-2xl mx-auto">
+                Cepat, aman, dan terpercaya. Masukkan nama game atau aplikasi yang Anda cari.
+            </p>
+            <div class="mt-8 max-w-xl mx-auto">
+                <div class="relative">
+                    <input 
+                        type="search" 
+                        placeholder="Contoh: Mobile Legends"
+                        class="w-full bg-gray-900 border border-gray-700 text-white rounded-lg py-3 px-5 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                    >
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md transition-colors">
+                        Cari
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <section class="py-16">
+            <h3 class="text-3xl font-bold text-center text-white mb-10">
+                Paling <span class="text-blue-500">Populer</span>
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+                
+                <a href="#" class="card-border-gradient rounded-lg p-4 text-center transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/200x250/111827/FFF?text=ML" alt="Game 1" class="rounded-md mx-auto mb-4 w-full h-auto object-cover">
+                    <h4 class="font-semibold text-white">Mobile Legends</h4>
+                    <p class="text-sm text-gray-400">Moonton</p>
+                </a>
+                
+                <a href="#" class="card-border-gradient rounded-lg p-4 text-center transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/200x250/111827/FFF?text=Genshin" alt="Game 2" class="rounded-md mx-auto mb-4 w-full h-auto object-cover">
+                    <h4 class="font-semibold text-white">Genshin Impact</h4>
+                    <p class="text-sm text-gray-400">Cognosphere</p>
+                </a>
+                
+                <a href="#" class="card-border-gradient rounded-lg p-4 text-center transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/200x250/111827/FFF?text=Valorant" alt="Game 3" class="rounded-md mx-auto mb-4 w-full h-auto object-cover">
+                    <h4 class="font-semibold text-white">Valorant</h4>
+                    <p class="text-sm text-gray-400">Riot Games</p>
+                </a>
+                
+                <a href="#" class="card-border-gradient rounded-lg p-4 text-center transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/200x250/111827/FFF?text=PUBGM" alt="Game 4" class="rounded-md mx-auto mb-4 w-full h-auto object-cover">
+                    <h4 class="font-semibold text-white">PUBG Mobile</h4>
+                    <p class="text-sm text-gray-400">Tencent</p>
+                </a>
+                
+                <a href="#" class="card-border-gradient rounded-lg p-4 text-center transition-transform duration-300 ease-in-out">
+                    <img src="https://placehold.co/200x250/111827/FFF?text=Spotify" alt="App 1" class="rounded-md mx-auto mb-4 w-full h-auto object-cover">
+                    <h4 class="font-semibold text-white">Spotify</h4>
+                    <p class="text-sm text-gray-400">Premium</p>
+                </a>
+                
+            </div>
+        </section>
+
+        <section class="py-16">
+            <h3 class="text-3xl font-bold text-center text-white mb-10">
+                Cara Transaksi
+            </h3>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-500 mb-2">1</div>
+                    <h4 class="text-xl font-semibold mb-2 text-white">Pilih Produk</h4>
+                    <p class="text-gray-400">Pilih game atau aplikasi yang Anda inginkan dan tentukan nominal top up.</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-500 mb-2">2</div>
+                    <h4 class="text-xl font-semibold mb-2 text-white">Lakukan Pembayaran</h4>
+                    <p class="text-gray-400">Pilih metode pembayaran favorit Anda. Kami mendukung QRIS, e-wallet, dan lainnya.</p>
+                </div>
+                <div class="bg-gray-900 p-8 rounded-lg">
+                    <div class="text-3xl font-bold text-blue-500 mb-2">3</div>
+                    <h4 class="text-xl font-semibold mb-2 text-white">Pesanan Diproses</h4>
+                    <p class="text-gray-400">Produk akan masuk ke akun Anda dalam hitungan detik setelah pembayaran berhasil.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center py-10 mt-16 border-t border-gray-800">
+            <p class="text-gray-500">&copy; 2025 TopupKilat. Semua Hak Cipta Dilindungi.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
+
